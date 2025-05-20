@@ -34,7 +34,7 @@ if uploaded_file:
         with open(save_path, "wb") as f:
             f.write(uploaded_file.read())
 
-        file_url = f"https://example.com/files/{filename}"  # Change to real URL if you serve files elsewhere
+        file_url = f"https://narealpani-qrapp.streamlit.app/{filename}"  
         qr_path = generate_qr(file_url, filename)
 
         st.success("✅ File uploaded and QR code generated.")
